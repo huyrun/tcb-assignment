@@ -30,6 +30,10 @@ An action add a new value to the specific `pool_id` is a operation insert a node
 [Red-Black-Tree](https://www.geeksforgeeks.org/red-black-tree-set-1-introduction-2/) is a kind of self-balancing binary search tree 
 where each node has an extra bit. I store in node the `size` information itself. It helps me find rank of one node more quickly.
 
+Summary about system:
+
+<p align="center"><img src="docs/diagram.png"/></p>
+
 ## Quantile (percentile form) formular
 
 I figure out it on [google.com](https://www.statisticshowto.com/probability-and-statistics/percentiles-rank-range/):
