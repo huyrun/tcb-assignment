@@ -32,9 +32,9 @@ where each node has an extra bit. I store in node the `size` information itself.
 
 Summary about system:
 
-<p align="center"><img src="docs/diagram.png"/></p>
+<p align="center"><img src="docs/tcb-assigment-system.png"/></p>
 
-## Quantile (percentile form) formular
+## Quantile (percentile form) formula
 
 I figure out it on [google.com](https://www.statisticshowto.com/probability-and-statistics/percentiles-rank-range/):
 ```
