@@ -5,7 +5,7 @@
 To run this project, please run command in your terminal (require install `Docker`):
 
 ```sh
-docker-compose -f ./build/docker-compose.yml up
+docker-compose -f ./build/docker-compose.yml up --build
 ```
 
 and boom, your app is running now.
