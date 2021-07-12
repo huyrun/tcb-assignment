@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "bcf0fb9d-7008-429f-8bec-7863f50e4762",
+		"name": "tcb_assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add pool values",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"pool_id\": 123546,\n    \"pool_values\": [\n        1,7,2,6\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/v1/pool/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"pool",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query quantile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"pool_id\": 123546,\n    \"percentile\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/v1/pool/query",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"pool",
+						"query"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

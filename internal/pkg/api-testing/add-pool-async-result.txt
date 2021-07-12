@@ -1,0 +1,35 @@
+          /\      |‾‾| /‾‾/   /‾‾/
+     /\  /  \     |  |/  /   /  /
+    /  \/    \    |     (   /   ‾‾\
+   /          \   |  |\  \ |  (‾)  |
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: add-pool-async.js
+     output: -
+
+  scenarios: (100.00%) 1 scenario, 200 max VUs, 1m30s max duration (incl. graceful stop):
+           * default: 200 looping VUs for 1m0s (gracefulStop: 30s)
+
+
+running (1m02.0s), 000/200 VUs, 29600 complete and 0 interrupted iterations
+default ✓ [======================================] 200 VUs  1m0s
+
+     █ setup
+
+     data_received..................: 4.3 MB 69 kB/s
+     data_sent......................: 24 MB  379 kB/s
+     http_req_blocked...............: avg=69.23µs  min=1µs    med=3µs      max=28.97ms  p(90)=5µs      p(95)=6µs
+     http_req_connecting............: avg=63.56µs  min=0s     med=0s       max=25.89ms  p(90)=0s       p(95)=0s
+     http_req_duration..............: avg=406.02ms min=1.47ms med=430.95ms max=1.57s    p(90)=655.29ms p(95)=756.32ms
+       { expected_response:true }...: avg=406.02ms min=1.47ms med=430.95ms max=1.57s    p(90)=655.29ms p(95)=756.32ms
+     http_req_failed................: 0.00%  ✓ 0          ✗ 29601
+     http_req_receiving.............: avg=63.59µs  min=15µs   med=51µs     max=12.37ms  p(90)=84µs     p(95)=109µs
+     http_req_sending...............: avg=33.85µs  min=7µs    med=22µs     max=106.95ms p(90)=34µs     p(95)=47µs
+     http_req_tls_handshaking.......: avg=0s       min=0s     med=0s       max=0s       p(90)=0s       p(95)=0s
+     http_req_waiting...............: avg=405.92ms min=1.41ms med=430.88ms max=1.57s    p(90)=655.17ms p(95)=756.22ms
+     http_reqs......................: 29601  477.540458/s
+     iteration_duration.............: avg=406.49ms min=1.74ms med=431.27ms max=1.63s    p(90)=655.68ms p(95)=756.71ms
+     iterations.....................: 29600  477.524325/s
+     vus............................: 200    min=0        max=200
+     vus_max........................: 200    min=200      max=200
