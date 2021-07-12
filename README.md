@@ -47,7 +47,7 @@ n = (P/100) x N
 
 quantile is:
 
-q = rank(a) + 0.b*(rank(a+ 1) - rank(a))
+q = rank(a) + 0.b*(rank(a+1) - rank(a))
 ```
 
 ## Tesing
@@ -60,5 +60,3 @@ I use [k6](https://k6.io/) for api testing. Script and result can be found [here
 - Add unit test
 - Implement rate limiting
 - ...
-
-
