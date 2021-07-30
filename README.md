@@ -7,7 +7,7 @@
 To run this project, please run command in your terminal (require install `Docker`):
 
 ```sh
-docker-compose -f ./build/docker-compose.yml up
+docker-compose -f ./build/docker-compose.yml up --build
 ```
 
 and boom, your app is running now.
@@ -49,7 +49,7 @@ n = (P/100) x N
 
 quantile is:
 
-q = rank(a) + 0.b*(rank(a+ 1) - rank(a))
+q = rank(a) + 0.b*(rank(a+1) - rank(a))
 ```
 
 ## Tesing
@@ -62,5 +62,3 @@ I use [k6](https://k6.io/) for api testing. Script and result can be found [here
 - Add unit test
 - Implement rate limiting
 - ...
-
-
