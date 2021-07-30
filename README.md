@@ -2,6 +2,8 @@
 
 <h2 align="center">Just a little and funny project</h2>
 
+[Problem](./docs/problem.txt)
+
 To run this project, please run command in your terminal (require install `Docker`):
 
 ```sh
